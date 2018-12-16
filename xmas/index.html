@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Halloween Greetings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Justin Mooney">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <header>
+       <img src="candyCaneLeft.png" alt="red a white candy cane">
+       <img src="candyCane.png" alt="red a white candy cane">
+      <h1>Happy Halloween!</h1>
+    </header>
+      <nav>
+        <ul class="navbar">
+          <li id="brL" ><a href="#">This</a></li>
+          <li><a href="#">Navbar</a></li>
+          <li><a href="#">Leads</a></li>
+          <li><a href="#">Nowhere</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section class="mainContent">
+          <article>
+            <h2>What Am I Doing?</h2>
+            <p>
+              I'm doing this. What is this? Well, this paragraph is a HTML node. Really basic grade-school stuff to be honest. HTML isn't even considered a programing language. 
+              What is it considered? I don't know. Something else. Let's look it up. <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">
+              According to the good people at MDN</a>, it's a "markup language." I guess I should have known that inasmuch as markup language is the the <span class="italics">m</span> and the <span class="italics">l</span> in html. Damn. 
+              Anyway, it's not a programming language because it's not intelligent enough to write out serious computer logic with. It's used for web-layout.
+              
+              <br><br>
+              So that's cool, but it doesn't really look cool until you link the html to a CSS file. <abbr title="Cascading Style Sheets">CSS</abbr> is what styles the HTML. CSS is also not a 
+              programming language. We're talking about stuff like font, like why certain text looks different than other text. It also adds color. There is much more to CSS, but we don't need to 
+              get into the weeds on this. The point is, I know this stuff.
+              
+              <br><br>
+              But what about the actual programming languages?
+            </p>
+            
+          </article>
+          <article>
+            <h2>The Real McCoys</h2>
+            <p>
+              The two actual real-deal programming languages I've been learning are Python and Javascript. Python is more compact and can be used to do just about anything. The big project I did 
+              with Python was to create a webscraper that automatically looks up the duration of films (via rottentomatoes.com) that I have typed in a spreadsheet and populates the adjacent spreadsheet column 
+              with that value. It also takes into account things like misspellings in my entries or multiple films that have the same title and will ask clarifying questions to the user. So if I 
+              wrote siera madre in my spreadsheet, when the script runs, it will ask me, “The Treasure of the Sierra Madre, the 1948 film staring Humphrey Bogart?(y/n).” Then I can affirm that 
+              that is the film I ment to write. Conversely, if that isn't the film I intended, I can reply no, and the program will spit out other matched film titles.
+              <br><br>
+              Javascript is, quite frankly, a cow. It's hideous. Semi-colons abound! And yet it's used on every website on the internet. So it's obviously very useful. It's used to make websites dynamic, 
+              so that users can interact with the content of the page. When you click a button that says, "Add to cart" that adds a product you are looking at into your online cart, javascript is what makes 
+              that happen. You set up an event listener that listens for the user to click the button, and when they do, the button triggers a function.
+              <br><br>
+              So the following button is a very primitive example of Javascript. Click it, and rejoice.
+            </p>
+            <button>Play the greatest and best song in the world</button>    
+            <div class="videoHidden">
+              <iframe src="https://player.vimeo.com/video/170928574" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+              <p><a href="https://vimeo.com/170928574" target="_blank">The Beach Boys [Pet Sounds] - Sloop John B (Stereo Remaster)</a> from <a href="https://vimeo.com/user53379557" target="_blank">arab hachim</a> on <a href="https://vimeo.com">Vimeo</a>.</p>          
+            </div>
+          </article>
+        </section>
+        <section class="sideContent">
+          <aside>
+            <h3>What Am I Doing As I Write This Blather?</h3>
+              <p>I am listening to arguably the most important rock band in American history. I'm speaking of course of the Beach Boys. Specifically, we're listening to Summer Days (And 
+              Summer Nights!!). That's the one with this boss cover:
+              </p>
+              <img src="albumCover.jpg" alt="album cover for Summer Days (And Summer Nights!!) by the Beach Boys">
+              <p>
+              There is a song on here called "Salt Lake City." Apparently, Brian and the Boys think Salt Lake is as groovy and out of sight as I do. They even go 
+              so far to say that "girl for girl, they've got the cutest of the Western states." But then a few songs later, they're going on about how they wish they all could be California 
+              girls. So I'm not really sure what to make of that inconsistency. Whatever the case, Salt Lake City, we'll be coming soon.
+              </p>
+          </aside>    
+          <aside>
+              <h3>Sponsers</h3>
+              <p>
+                This site is brought to you by Fender guitars and surfing. It's a genuine fact that both of these things rule.
+              </p>
+              <img src="FJag.jpg" alt="vintage Fender add of guy player a Jaguar while surfing">
+          </aside>
+        </section>  
+    </main>
+    <footer class="navbar">
+      <!-- <h2>Hoist Up The John B's Sail!</h2> -->
+      <p>&copy 2018 Happy New Year Productions<p>
+    </footer>
+    <script src="main.js" src="https://player.vimeo.com/api/player.js">
+    </script>  
+  </body>
+</html>

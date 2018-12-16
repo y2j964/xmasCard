@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'im_fell_double_picaregular';
+    src: url('imfedprm28p-webfont.woff2') format('woff2'),
+         url('imfedprm28p-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('lato-regular-webfont.woff2') format('woff2'),
+         url('lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html {
+  background-image: url("christmasBackground2.jpg");
+  background-size: cover;
+}
+
+body {
+  width: 85%;
+  margin: 2em auto;
+  border-radius: 10px;
+  background: white;
+  padding-bottom: 1em;
+}
+
+header img {
+  height: 100px;
+  width: auto;
+  float: left;
+}
+
+header img:nth-of-type(2){
+  height: 100px;
+  width: auto;
+  float: right;
+}
+
+header {
+  text-align: center;
+  padding: 1.5em;
+}
+
+header:after {
+  content: "";
+  clear: both;
+}
+
+h1 {
+  font-family: 'im_fell_double_picaregular';
+  font-size: 2.3em;
+  letter-spacing: 1px;
+  color: #e60000;
+  }
+
+h2, h3 {
+  font-family: 'im_fell_double_picaregular';
+}
+
+ul, li {
+	list-style-type: none;
+  margin: 0; 
+  padding: 0;
+	text-decoration:none;
+}
+
+a {
+  color: #00b300;
+}
+
+.navbar {
+  display: flex;
+  width: 96%;
+  margin: 0 auto;
+  background:  #e60000;
+  border-radius: 18px 18px 0 0;
+  text-align: center;
+}
+
+.navbar > li:hover {
+  background-color: #00b300;
+  cursor: pointer;
+}
+
+#brL:hover{
+  border-radius: 18px 0 0 0;
+  color:black;
+}
+
+.navbar li {
+  padding: .8em .0;
+  flex-basis: 7em;
+  transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+}
+
+.navbar a {
+  color:white
+}
+
+p {
+  line-height:1.5;
+  font-family: 'latoregular';
+}
+
+.italics {
+  font-style: italic;
+  padding-right: 0.18em;
+}
+
+main {
+  display: flex;
+  width: 96%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+article {
+  margin-bottom: 3em;
+}
+
+aside {
+  margin-bottom: 3em;
+  text-align: center;
+
+}
+
+/* aside h3 { */
+  /* text-align: center; */
+/* } */
+
+aside img {
+  width: 100%;
+  height: auto;
+}
+
+aside p {
+  font-size: .9em;
+}
+
+.mainContent {
+  flex:8;
+  padding: 1em;
+}
+
+.sideContent {
+  flex:2;
+  padding: 1em;
+  flex-wrap: wrap;
+  /* border-left: 5px solid #e60000;   */
+  background-color:  #f2f2f2;
+  border-radius: 8px;
+}
+
+.videoHidden {
+  display: none;
+}
+
+.videoDisplay {
+  display: block;
+  padding: 1em 0;
+}
+
+footer {
+  text-align: center;
+  font-family: 'im_fell_double_picaregular';
+  padding: 1em;
+  /* border-top: 4px solid #e60000; */
+  color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 37.5em) {
+  
+}
+	
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 37.5em) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 48em) {
+   
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 62em) {
+	
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 75em) {
+}
