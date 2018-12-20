@@ -160,6 +160,10 @@ aside p {
   border-radius: 8px;
 }
 
+button {
+  margin-left: 1em;
+}
+
 .videoHidden {
   display: none;
 }
