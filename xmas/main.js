@@ -22,7 +22,7 @@ songOption.addEventListener("change", function(e) {
 })
 
 button.addEventListener("click", function() {
-  const srcFilePath = "file:///C:/Users/JCM/Documents/webpages/web1/xmas/index1.html";
+  const srcFilePath = "https://y2j964.github.io/xmasCard/xmas/";
   if (vimeoPlayer.src !== srcFilePath) {   
     greatestSong.className = "videoDisplay";
     vimeoPlayer.src += "?autoplay=1";
