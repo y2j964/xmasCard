@@ -15,8 +15,8 @@
 }
 
 * {
-	box-sizing: border-box;
-	text-decoration: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
@@ -28,18 +28,20 @@ body {
 header img {
   height: 100px;
   width: auto;
+  vertical-align: middle;
   float: left;
 }
 
 header img:nth-of-type(2){
   height: 100px;
   width: auto;
+  vertical-align: middle;
   float: right;
 }
 
 header {
   text-align: center;
-  padding: 1.5em;
+  padding: 1.5em 0;
 }
 
 header:after {
@@ -70,7 +72,7 @@ a {
 }
 
 .navbar {
-  width: 96%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -122,7 +124,7 @@ p {
 
 main {
   display: block;
-  width: 96%;
+  width: 100%;
   margin: 0 auto;
   padding: 1em 0;
 }
@@ -138,7 +140,7 @@ aside {
 
 aside img {
   display: block;
-  width: 250px;
+  width: 235px;
   height: auto;
   margin: 0 auto;
 }
@@ -150,18 +152,15 @@ aside p {
 
 .mainContent {
   flex:9.5;
-  padding: 1em;
+  padding: 1em .5em;
 }
 
 .sideContent {
   flex:2.5;
-  padding: 1em;
+  padding: 1em .5em;
   flex-wrap: wrap;
-  /* border-left: 5px solid #e60000;   */
   background-color:  #f2f2f2;
   border-radius: 8px;
-  display: grid;
-  justify-content: space-between;
 }
 
 button {
@@ -194,7 +193,7 @@ footer {
   font-family: 'im_fell_double_picaregular';
   padding: 1em;
   color: white;
-  width: 96%;
+  width: 100%;
   margin: 0 auto;
   background:  #e60000;
   border-radius: 0 0 18px 18px;
@@ -207,7 +206,13 @@ footer {
 	
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 37.5em) {  
+  header {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  
   .navbar {
+    width: 96%;
     flex-direction: row;
   }
 
@@ -230,14 +235,33 @@ footer {
     border-radius: 18px 0 0 0;
   }  
 
+   main {
+     width: 96%;
+   }
+   
+   .mainContent {
+     padding-left: 1em;
+     padding-right: 1em;     
+   }
+   
+   .sideContent {
+     padding-left: 1em;
+     padding-right: 1em;
+   }
+   
   aside img {
-    width: 258px;
+    width: 235px;
     height: auto;
   }   
+	
   iframe {
     width: 85%;
     height:85%
   }   
+	
+  footer {
+    width: 96%;  
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -256,7 +280,7 @@ footer {
   }  
 
   aside img {
-    width: 265px;
+    width: 253px;
     height: auto;
   }  
   
