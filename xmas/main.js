@@ -2,12 +2,13 @@ let button = document.querySelector("button");
 let greatestSong = document.querySelector(".videoHidden");
 let vimeoPlayer = document.querySelector("iframe");
 let songOption = document.querySelector("select");
-let barToggler = document.querySelector("i");
+// let barToggler = document.querySelector("i");
+let barToggler = document.getElementsByTagName("li")[0];
 let navbarLinks = Array.from(document.getElementsByTagName("li"));
 navbarLinks = navbarLinks.slice(1);
 
-barToggler = addEventListener("click", function() {
-  // console.log(navbarLinks[0].className)
+barToggler.addEventListener("click", function() {
+  console.log(navbarLinks[0].className)
   for (let i = 0; i < navbarLinks.length; i++) {
     if (navbarLinks[i].className === "navLinkProper") {
       navbarLinks[i].className = "expandedNav";
