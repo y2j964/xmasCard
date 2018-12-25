@@ -39,7 +39,7 @@ songOption.addEventListener("change", function(e) {
 button.addEventListener("click", function() {
   console.log(vimeoPlayer.src)
   const srcFilePath = "https://y2j964.github.io/xmasCard/xmas/";
-  if (vimeoPlayer.src !== srcFilePath) {   
+  if (vimeoPlayer.src !== srcFilePath && vimeoPlayer.src !== "") {   
     greatestSong.className = "videoDisplay";
     vimeoPlayer.src += "?autoplay=1";
   } 
